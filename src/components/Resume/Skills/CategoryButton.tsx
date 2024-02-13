@@ -1,5 +1,5 @@
 import React from 'react'
-import type { CategoryButtonProps } from '../../../types'
+import type { CategoryButtonProps } from 'types/CategoryButton'
 
 const CategoryButton: React.FC<CategoryButtonProps> = ({ handleClick, active, label }) => (
   <button

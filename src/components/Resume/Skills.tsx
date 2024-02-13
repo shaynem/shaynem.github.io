@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
+import type { SkillsProps } from 'types/Skills'
 import CategoryButton from './Skills/CategoryButton'
 import SkillBar from './Skills/SkillBar'
-import type { SkillsProps } from '../../types'
 
 const Skills: React.FC<SkillsProps> = ({ skills, categories }) => {
   const initialButtons = Object.fromEntries(

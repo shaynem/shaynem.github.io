@@ -1,6 +1,6 @@
 import React from 'react'
 import dayjs from 'dayjs'
-import type { CellProps } from '../../types'
+import type { CellProps } from 'types/Cell'
 
 const Cell: React.FC<CellProps> = ({ data }) => (
   <div className='cell-container'>

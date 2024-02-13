@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import data from '../../data/contact'
-import { Contact } from '../../types'
+import data from 'data/contact'
+import { Contact } from 'types/Contact'
 
 const ContactIcons: React.FC = () => (
   <ul className='icons'>

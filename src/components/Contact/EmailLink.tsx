@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 
-import type { EmailLinkProps } from '../../types'
+import type { EmailLinkProps } from 'types/Email'
 
 const validateText = (text: string): boolean => {
   // eslint-disable-next-line
