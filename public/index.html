@@ -1,32 +1,129 @@
 <!DOCTYPE html>
-<html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
-<head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="%PUBLIC_URL%/images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="%PUBLIC_URL%/images/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="canonical" href="%PUBLIC_URL%/">
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900" rel="stylesheet" async>
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shayne McCulloch - Resume</title>
+        <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f8f8f8;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 40px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .contact, .reference {
+      font-size: 14px;
+    }
+    ul {
+      margin: 5px 0 15px 20px;
+    }
+    .skills-grid {
+      display: flex;
+      gap: 40px;
+    }
+    .skills-grid div {
+      flex: 1;
+    }
+  </style>
+        <script>
+  function revealPhone(el) {
+    const encoded = [48, 52, 48, 49, 51, 56, 53, 56, 54, 53];;
+    const phone = encoded.map(c => String.fromCharCode(c)).join('');
+    el.href = `tel:${phone}`;
+    el.textContent = phone
+  }
+</script>
+    </head>
+    <body>
 
-<body>
-    <div id="root"></div>
-</body>
+        <header>
+            <h1>Shayne McCulloch</h1>
+            <p>CTO, Entrepreneur, Startup lover</p>
+            <p class="contact">
+                📞 <a href="#"
+                    onclick="revealPhone(this); return false;">Click</a>
+                | 📧 shayne@etls.io | 🌐 <a
+                    href="http://shayne.au">shayne.au</a> | <a
+                    href="http://cuetools.au">cuetools.au</a>
+            </p>
+        </header>
 
-</html>
+        <section class="section">
+            <h2>Summary</h2>
+            <p>I am currently employed as the Head of Digital Technology at
+                Disrupt Digital, driving ambitious change across infrastructure,
+                tooling, and automation. With a strong track record of
+                delivering impactful tech projects like the OHMSense RF
+                detection system, I enjoy building high-performing teams and
+                staying hands-on with modern technologies.</p>
+        </section>
+
+        <section class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Head of Digital Technology @ Disrupt Digital
+                        (2022–Present)</strong><br>
+                    Employee of the Year - 2023. Led system migrations
+                    (Salesforce, AWS, BambooHR), implemented AI architecture,
+                    automated SEO and Google Ads processes, and delivered
+                    internal platforms.
+                </li>
+                <li><strong>Founder @ Cuetools (2024–Present)</strong><br>
+                    Built mobile/web tools for cue sports. Developed and
+                    deployed a live streaming timer used at national events
+                    (AEBF, SEQBF, IEBA, WEBA).
+                </li>
+                <li><strong>Founder @ VPNSecure (2010–2021)</strong><br>
+                    Launched VPN service with global coverage (50+ countries).
+                    Focused on privacy, security, and device compatibility.
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <strong>What I Do</strong>
+                    <ul>
+                        <li>Linux / Cloud</li>
+                        <li>PHP</li>
+                        <li>Figma</li>
+                        <li>APIs</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>What I Love</strong>
+                    <ul>
+                        <li>AI / LLM</li>
+                        <li>TypeScript / JS / React</li>
+                        <li>Automation</li>
+                        <li>Leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>References</h2>
+            <p class="reference">
+                <strong>Email for references</strong><br>
+            </section>
+
+        </body>
+    </html>
